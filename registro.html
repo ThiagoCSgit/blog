@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <script src="/public/js/cadastro.js"></script>
+</head>
+<body class="body-cadastro">
+  <div>
+      <h1>Crie um novo usuário</h1>
+      <h1 id="h1-login">Login</h1>
+      <form id="login">
+        <div>
+          <label for="newName">Login</label>
+          <input
+            type="text"
+            name="newName"
+            id="newName"
+            placeholder="Login"
+            required
+          />
+        </div>
+        <div>
+          <label for="newPassaword">Senha</label>
+          <input
+            type="password"
+            name="newPassword"
+            id="newPassword"
+            placeholder="Senha"
+            required
+          />
+        </div>
+      </form>
+      <div class="btn-area">
+        <button type="submit" onclick="cadastro()" value="Cadastrar" id="btn-login">
+          Cadastrar
+        </button>
+      </div>
+    </div>
+</body>
+</html>
