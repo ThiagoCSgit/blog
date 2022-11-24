@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usuário logado</title>
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <script src="/public/js/postar.js"></script>
+    <script src="/public/js/bringPost.js"></script>
+  </head>
+  <body onload="bringPost()">
+    <div class="page">
+      <h1>Parabéns, você sabe seu login e senha</h1>
+      <p>Posts anteriores:</p>
+      <div id="previousPosts"></div>
+      <label for="post">Nova postagem:</label>
+      <textarea name="post-area" id="post" cols="30" rows="10"></textarea>
+      <button
+        type="button"
+        onclick="postar()"
+        value="Postar"
+        id="btn-voltar"
+      >
+        Postar
+      </button>
+      <button
+        type="button"
+        onclick="window.location.href = '/index.html'"
+        value="Voltar"
+        id="btn-voltar"
+      >
+        Voltar
+      </button>
+    </div>
+  </body>
+</html>
